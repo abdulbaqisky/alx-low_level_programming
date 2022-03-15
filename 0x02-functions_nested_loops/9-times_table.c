@@ -1,4 +1,4 @@
-#include "main.h"
+#include "main.hi9-times_table.c"
 
 /**
  * times_table - Prints the 9 times table, starting with 0.
@@ -10,11 +10,11 @@ void times_table(void)
 	for (num = 0; num <= 9; num++)
 	{
 		_putchar('0');
-		for (mult = 1; mult <= 9; mult++)
+		for (multi = 1; multi <= 9; multi++)
 		{
 			_putchar(',');
 			_putchar(' ');
-			prod = num * mult;
+			prod = num * multi;
 			if (prod <= 9)
 				_putchar(' ');
 			else
