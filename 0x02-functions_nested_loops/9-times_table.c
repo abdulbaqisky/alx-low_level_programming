@@ -1,20 +1,20 @@
-#include "main.hi9-times_table.c"
+#include "main.h"
 
 /**
  * times_table - Prints the 9 times table, starting with 0.
  */
 void times_table(void)
 {
-	int num, multi, prod;
+	int num, mult, prod;
 
 	for (num = 0; num <= 9; num++)
 	{
 		_putchar('0');
-		for (multi = 1; multi <= 9; multi++)
+		for (mult = 1; mult <= 9; mult++)
 		{
 			_putchar(',');
 			_putchar(' ');
-			prod = num * multi;
+			prod = num * mult;
 			if (prod <= 9)
 				_putchar(' ');
 			else
