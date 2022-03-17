@@ -1,5 +1,4 @@
-#include "holberton.h"
-#include <stdio.h>
+#include "main.h"
 
 /**
  * _isupper - Check if paramter c represents an uppercase letter.
