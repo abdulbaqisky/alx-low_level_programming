@@ -6,23 +6,25 @@
  *
  * Return: a pointer to the byte that matches one of the bytes
  */
-char *_strpbrk(char *s, char *accept)
+char *_strstr(char *haystack, char *needle)
 {
-	int i = 0;
+	int i;
 	int j;
 
-	while (s[i] != '\0')
+	for (i = 0; haystack[i] != '\0';)
 	{
-		j = 0;
-		while (accept[j] != '\0')
+		for (j = 0; needle[j] != '\0'; j++)
 		{
-			if (s[i] == accept[j])
+			if (needle[j] != haystack[i + j])
 			{
-				return (s + i);
+				break;
 			}
-			j++;
+		}
+		if (needle[j] == '\0')
+		{
+			return (&haystack[i]);
 		}
 		i++;
 	}
-	return (0);
+	return ('\0');
 }
