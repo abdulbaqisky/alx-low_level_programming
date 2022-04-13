@@ -1,12 +1,10 @@
 #include "3-calc.h"
-
 /**
  * get_op_func - pointer to function.
  * @s: operator passed as argument.
  *
  * Return: NULL if not matches.
  */
-
 int (*get_op_func(char *s))(int, int)
 {
 	op_t ops[] = {
