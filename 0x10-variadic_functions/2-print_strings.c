@@ -28,7 +28,8 @@ void print_strings(const char *separator, const unsigned int n, ...)
 			}
 		}
 		else
-		{			printf("%p", p_args);
+		{
+			printf("%p", p_args);
 			if (separator != NULL && count < n - 1)
 			{
 				printf("%s", separator);
